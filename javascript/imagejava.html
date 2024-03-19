@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        .container{
+           
+            background-color: black;
+        }
+        h1{
+            font-family:'Times New Roman', Times, serif;
+            text-align: center;
+            color: rgb(200, 255, 0);
+        }
+         .collections{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        .collections img{
+            width: 300px;
+            height: 200px;
+            padding: 3px;
+            transition: all 1s;
+
+        }
+        .collections img:hover{
+            transform:scale(0.7) rotate(15deg);
+            cursor: grab;
+
+        }
+        .popon{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgb(227, 231, 231);
+            height: 100%;
+            width:100%;
+           background-color:rgba(0,0,0,0.6);
+           display: none;
+        }
+        .popon .poponimg{
+            width: 500px;
+            position: absolute;
+            top:200px;
+            left: 420px;
+        }
+        .popon .icon{
+            position: absolute;
+            top: 180px;
+            right: 450px;
+            font-size: 60px;
+            color: aliceblue;
+
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gallary Collections</h1> <br>
+        <div class="collections">
+            <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <img src="https://images.unsplash.com/photo-1534093607318-f025413f49cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGNhcnN8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhcnN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <img src="https://images.unsplash.com/photo-1493238792000-8113da705763?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <img src="https://images.unsplash.com/photo-1592853625601-bb9d23da12fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTd8fGNhcnN8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+            <img src="https://images.unsplash.com/photo-1517672651691-24622a91b550?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnN8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+            <img src="https://images.unsplash.com/photo-1494697536454-6f39e2cc972d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fGNhcnN8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+            <img src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNhcnN8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+            <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNhcnN8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fGNhcnN8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+            <img src="https://images.unsplash.com/photo-1616951398911-92770a5172da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzR8fGNhcnN8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="popon">
+            <img class="poponimg" src="https://media.istockphoto.com/id/182057878/photo/hot-sports-car.webp?b=1&s=170667a&w=0&k=20&c=72k4Awhsi_OinMsuIEXv1UKG8RSErkmYzaHehxlHJmg=" alt="">
+            <span class="icon">&times;</span>
+        </div>
+    </div>
+   <script>
+    let images = document.querySelectorAll(".collections img")
+    let poponElement = document.querySelector(".popon")
+    let closePopon = document.querySelector(".icon")
+    let poponImage = document.querySelector(".poponimg")
+
+    for(img of images){
+        img.onclick = function(){
+            poponElement.style.display = "block"
+            poponImage.src = this.getAttribute("src")
+
+
+        }
+    }
+    closePopon.onclick = function(){
+            poponElement.style.display = "none"
+
+        }
+
+
+   
+
+   </script> 
+</body>
+</html>

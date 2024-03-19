@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("https://imgs.search.brave.com/E24supL9gph2V_Rjcig7jCzQgTZCWvARiCuDKVIaOc8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDI3NjA3/OTYuanBn");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        form{
+            margin-top: 5%;
+            font-size: 20px;
+            margin-left: 20%;
+        }
+        #id1,#id2 {
+            background-color: rgb(0, 247, 255);
+            border-radius: 10px;
+            color: black;
+        }
+    
+           
+            
+      
+       
+        #Submit{
+            width: 80px;
+            border-radius: 20px;
+            background-color: rgb(56, 204, 56);
+           margin-left: 40px;
+
+        }
+        #Submit:hover{
+            background-color: rgb(0, 113, 121);
+            color: rgb(240, 232, 232);
+            transform: scale(0.8);
+        }
+
+        
+        
+    </style>
+    
+</head>
+<body> 
+    <form>
+    <input type="text" id="id1"> <br> <br>
+    <input type="text" id="id2"> <br> <br>
+    <button id="Submit">Submit</button>
+</form>
+<script>
+   let Input1 = document.getElementById("id1");
+let Input2 = document.getElementById("id2");
+let Result = document.getElementById("Submit");
+
+Input1.addEventListener("keydown", function (event) {
+  //check if the pressed key is enter (key code 13)
+  if (event.keyCode === 13) {
+    //prevent the default from submission
+    event.preventDefault();
+    //shift focus to the second input field
+    Input2.focus();
+  }
+});
+
+Input2.addEventListener("keydown", function (event) {
+  //check if the pressed key is enter (key code 13)
+  if (event.keyCode === 13) {
+    //prevent the default from submission
+    event.preventDefault();
+    //shift focus to the Result button
+    Result.focus();
+  }
+});
+
+Result.addEventListener("click", function (event) {
+  //prevent the default from submission
+  alert("Your response Recorded SUCCESSFULLY...!!");
+  event.preventDefault();
+
+ 
+});
+        
+       
+    
+     
+   
+   
+</script>
+</body>
+</html>

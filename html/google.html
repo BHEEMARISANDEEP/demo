@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+
+    }
+    .main{
+        background-color: black;
+       
+        height:30px;
+        display: grid;
+        grid-template-columns:20% 70% 10%;
+        grid-template-areas:"class1 class2 class3 ";
+    }
+    .submain{
+        background-color: rgb(37, 36, 36);
+        color: white;
+        grid-area: class1;
+        display: flex;
+        align-items: center;
+        
+    
+
+
+
+    }
+   .submain h4{
+    position: relative; 
+    left: 30px;
+
+    }
+    .submain h3{
+        position: relative;
+    left: 120px;
+
+    }
+
+    .subdiv1{
+        background-color: rgb(100, 98, 98);
+        color: white;
+        grid-area:class2;
+        display: flex;
+        align-items: center;
+        
+
+
+
+    }
+    .subdiv2{
+        background-color: black;
+        color: white;
+        grid-area:class3;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .main2{
+        background-color: rgb(100, 98, 98);
+       margin-top:1px;
+       border: 0px solid;
+       border-radius:10px;
+        height:40px;
+        display: grid;
+        grid-template-columns:25% 55% 20%;
+        grid-template-areas:"class1 class2 class3 ";
+    }
+    .main12{
+        display: flex;
+        align-items: center;
+        background-color: black;
+        color: white;
+       
+
+    }
+    .main13{
+        display: flex;
+        align-items: center;
+        background-color: black;
+        color: white;
+       
+
+    }
+    .main14{
+        display: flex;
+        align-items: center;
+        background-color: rgb(43, 42, 42);
+        color: white;
+        justify-content: space-between;
+       
+
+    }
+    .google{
+        background-color:rgb(20, 19, 19);
+        height:100vh;
+        
+    }
+    .logo img{
+       position: relative;
+       top:200px;
+       margin-left:500px;
+    }
+    .name h3 {
+        color:white;
+        margin-left: 1200px;
+        display: flex;
+    }
+</style>
+        
+</head>
+<body>
+    <div class="main">
+        <div class="submain">
+           <p><i class="fa-brands fa-chrome"></i></p> 
+            <h4>New tab</h4>
+           <h3> <i class="fa-solid fa-plus"></i></h3>
+           <h3><i class="fa-solid fa-xmark" style="position: relative;left: 30px;"></i></h3>
+        </div>
+        <div class="subdiv1">
+            <h3> <i class="fa-solid fa-plus" style="position: relative;left: 5px;"></i></h3>
+        </div>
+        <div class="subdiv2">
+            <i class="fa-solid fa-chevron-up fa-flip-vertical"></i>
+            <i class="fa-solid fa-minus"></i>
+            <i class="fa-solid fa-minimize"></i>
+            <h3><i class="fa-solid fa-xmark"></i></h3>
+        </div>
+
+    </div>
+    <div class="main2">
+        <div class="main12">
+            <i class="fa-solid fa-caret-left"  style="position: relative;left: 18px;"></i>
+            <i class="fa-solid fa-caret-right" style="position: relative;left: 28px;"></i>
+            <i class="fa-solid fa-rotate-right"  style="position: relative;left:58px;"></i> 
+            <i class="fa-regular fa-bookmark" style="margin-left: 280px;"></i>   
+        </div>
+        <div class="main13">
+            <i class="fa-brands fa-google" style="position: relative;left: 50px;z-index: 1; color: black;"></i>
+            <i class="fa-solid fa-magnifying-glass" style="position: relative;left:70px; z-index: 1; color: black;"></i>
+            <input type="text" placeholder="                        serach or type a url" style="width:600px;height: 30px; border-radius:50px;">
+            <i class="fa-solid fa-microphone" style="margin-left:20px;"></i>
+
+
+        </div>
+        <div class="main14">
+            <i class="fa-solid fa-globe" style="position: relative;left: 220px;"></i>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="google">
+       <div class="logo">
+        <img src="https://imgs.search.brave.com/a7QpYQRU3VMf9O1rZCsX0pKIlyjAiLkfKJml3hWFXg8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ibG9n/Lmh1YnNwb3QuY29t/L2hzLWZzL2h1YmZz/L1NjcmVlbiUyMFNo/b3QlMjAyMDE5LTA1/LTI4JTIwYXQlMjAy/LjQzLjIzJTIwUE0u/cG5nP3dpZHRoPTU5/OCZuYW1lPVNjcmVl/biUyMFNob3QlMjAy/MDE5LTA1LTI4JTIw/YXQlMjAyLjQzLjIz/JTIwUE0ucG5n " style="border-radius:100px;" width="350px"> 
+        <input type="text" placeholder="       search or url"  style="width: 430px; height:30px;border-radius:20px; position: relative;top:250px; right:380px;">
+        <i class="fa-solid fa-magnifying-glass" style= "color: rgb(17, 16, 16); position:relative;top: 253px;right: 810px;"></i>
+        <i class="fa-solid fa-microphone" style="margin-left:20px; color: rgb(11, 12, 12); position: relative;top: 253px;right:450px;"></i>
+        
+
+       </div>
+       <div class="name">
+        <h3>Gmail</h3>
+        <h3>Images</h3>
+        
+       </div>
+
+    </div>
+    
+</body>
+</html>

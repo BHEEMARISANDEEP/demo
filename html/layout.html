@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            display: grid;
+            grid-template-columns:50% 50%;
+            grid-template-rows:20% 20% 20% 20% 20%;
+            grid-template-areas:"class1 class1"
+                                "class2 class2"
+                                "class3 class4"
+                                "class5 class6"
+                                "class7 class7";
+                                height:90vh;
+                                width:90%;
+                                grid-gap:10px;
+        }
+        .name{
+            background-color:rgb(255, 168, 168);
+            grid-area:class1;
+        }
+        .profile{
+            background-color: rgb(238, 150, 164);
+            grid-area:class2;
+        }
+        .education {
+            background-color:burlywood;
+            grid-area:class3;
+        }
+        .skills {
+            background-color: rgb(240, 166, 178);
+            grid-area:class4;
+        }
+         .interests{
+            background-color: pink;
+            grid-area:class5;
+        }
+        .language{
+            background-color:burlywood;
+            grid-area:class6;
+        }
+        .work{
+            background-color:rgb(255, 189, 96);
+            grid-area:class7;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="name">
+            <h1>BHEEMARI SANDEEP</h1>
+            <img src="https://www.instagram.com/p/CuRj4KmRG_1H64dz0g113tLa254_0qsgl7mr240/" alt="">
+        </div>
+        <div class="profile">
+            <h2>PROFILE</h2>
+        </div>
+        <div class="education">
+            <h2>EDUCATION</h2>
+        </div>
+        <div class="skills">
+            <h2>SKILLS</h2>
+        </div>
+        <div class="interests">
+            <h2>INTERESTS</h2>
+        </div>
+        <div class="language">
+            <h2>LANGUAGE</h2>
+        </div>
+        <div class="work">
+            <h2>ACHIVEMENTS</h2>
+        </div>
+    </div>
+    
+</body>
+</html>

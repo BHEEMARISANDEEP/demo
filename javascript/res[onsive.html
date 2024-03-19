@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            background-color: rgba(192, 192, 192, 0.897);
+        }
+        .logo h1{
+            display: none;
+        }
+        .links ul{
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            padding-bottom: 15px;
+            
+        }
+        .links ul li a{
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .links ul li a:hover{
+            background-color: blue;
+            color: white;
+          
+           
+        }
+        .links ul li:hover{
+            background-color: blue;
+            color: white;
+            
+        }
+
+            p{
+                display:none;
+                margin-left: 800px;
+                padding-bottom: 30px;
+                font-size: 50px;
+                position: relative;
+                bottom: 530px;
+
+        }
+        
+        @media(max-width:1000px){
+        
+            .links{
+                display: none;
+                background-color: rgb(16, 226, 226);
+                padding: 80px;
+              
+            }
+            .links ul{
+                flex-direction: column;
+            }
+            .links ul li{
+                margin-top: 30px;
+            }
+            .logo img{
+                width: 150px;
+                margin-left: 30px;
+              margin-left: 100px; 
+            }
+            .logo h1{
+            display: block;
+            font-size: 50px;
+           text-align: center;
+           position: relative;
+           top: 100px;
+           
+        }
+        p{
+              display: block;
+              margin-left: 800px;
+                padding-bottom: 30px;
+                font-size: 50px;
+                position: relative;
+                bottom: 100px;
+
+        }
+     .active{
+        display:flex;
+     }
+            
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="logo">
+            <h1>FACEBOOK</h1>
+            <a href=""><img src="https://imgs.search.brave.com/ZxI9eAPQawbHlJPW6M5gMTaDtw3ZB0GPo_fV-e_exGM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/dW5pcGlsZS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjIv/MDYvbG9nby1mYWNl/Ym9vay5wbmc" alt="" width="80px"></a>
+        </div>
+        <div class="links">
+            <ul>
+                
+                <li><a href="">Home <i class="fa-solid fa-house"></i>  </a> </li>
+                <li><a href="">Reels <i class="fa-solid fa-play"></i> </a></li>
+                <li><a href="">Friends <i class="fa-solid fa-user-group"></i> </a></li>
+                <li><a href="">Notifiactions <i class="fa-solid fa-envelope"></i> </a></li>
+                <li><a href="">profile <i class="fa-solid fa-user"></i></a> </li>
+            </ul>
+        </div>
+        <P class="icon"><i class="fa-solid fa-bars"></i></P>
+    </div>
+ <script>
+    let nav = document.querySelector(".icon")
+    let menu = document.querySelector(".links")
+    nav.onclick = function(){
+     menu.classList.toggle("active") 
+
+    }
+ </script>
+</body>
+</html>

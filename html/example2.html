@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav{ 
+            display: grid;
+            grid-template-columns:30% 30% 25% 15%;
+            grid-template-rows:10% 30% 50% 10%;
+            grid-template-areas:"class1 class1 class1 class1"
+                                 "class2 class3 class4 class5"
+                                 "class6 class6 class6 class5"
+                                 "class7 class7 class7 class7";
+                                 width:80%;
+                                 height:100vh;
+                                 grid-gap:10px;
+        }
+        #a{
+            background-color: red;
+            grid-area:class1;
+            border-radius:20PX;
+        }
+        #b{
+            background-color: rgb(133, 199, 12);
+            grid-area:class2;
+            border-radius:20PX;
+        }
+        #c{
+            background-color: rgb(25, 43, 212);
+            grid-area:class3;
+            border-radius:20PX;
+        }
+        #d{
+            background-color: rgb(238, 17, 153);
+            grid-area:class4;
+            border-radius:20PX;
+        }
+        #e{
+            background-color: rgb(243, 247, 13);
+            grid-area:class5;
+            border-radius:20PX;
+        }
+        #f{
+            background-color: rgb(140, 243, 229);
+            grid-area:class6;
+            border-radius:20PX;
+        }
+        #g{
+            background-color: rgb(7, 85, 18);
+            grid-area:class7;
+            border-radius:20PX;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="header" id="a"></div>
+        <div class="smallbox" id="b"></div>
+        <div class="smallbox" id="c"></div>
+        <div class="smallbox" id="d"></div>
+        <div class="sidebar" id="e"></div>
+        <div class="main content" id="f"></div>
+        <div class="footer" id="g"></div>
+    </div>
+</body>
+</html>

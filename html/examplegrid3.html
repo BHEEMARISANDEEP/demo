@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+            .nav{
+                display: grid;
+                grid-template-rows:15% 25% 50% 10%;
+                grid-template-columns: 33% 33% 34%;
+                grid-template-areas:"class1 class1 class1 class1"
+                                    "class2 class3 class4 class4"
+                                    "class5 class5 class5 class5"
+                                    "class6 class6 class6 class6";
+                                    width:70%;
+                                    height:90vh;                          
+            }
+          
+            #a{ 
+            background-color: red;
+            grid-area:class1;   
+        }
+        #b{
+            background-color: rgb(133, 199, 12);
+            grid-area:class2;
+            margin-right:5px;
+        
+
+            
+        }
+        #c{
+            background-color: rgb(25, 43, 212);
+            grid-area:class3;
+            margin-right:5px;
+        
+        
+        }
+        #d{
+            background-color: rgb(238, 17, 153);
+            grid-area:class4;
+    
+        
+        }
+        #e{
+            background-color: rgb(243, 247, 13);
+            grid-area:class5;
+            margin-top:5px;
+        
+        }
+        #f{
+            background-color: rgb(10, 189, 165);
+            grid-area:class6;
+            
+        }   
+            
+    </style>
+</head>
+<body>
+    V <div class="nav">
+        <div class="free css layout" id="a"></div>
+        <div class="content here" id="b"></div>
+        <div class="content here" id="c"></div>
+        <div class="content here" id="d"></div>
+        <div class="secondary cloumn" id="e"></div>
+        <div class="footer" id="f"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .image{
+            width: 150px;
+            height: 130px;
+
+        }
+        .card{
+            width: 320px;
+            height: 420px;
+            border-radius: 10px;
+            box-shadow: 2px 3px 5px rgb(5, 226, 189);
+            padding: 15px;
+            text-align: center;
+            margin: 7px;
+        }
+        h1{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+    <a href=""></a>
+</head>
+<a href=""></a>
+<body>
+  <div class="main">
+        <div class="card">
+            <img src="https://imgs.search.brave.com/ho70x-vWmnB6tgOJ4jwBx7k2dz8aNbQ5j1Wj6q2zPSo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/YW5pbWVzZW5wYWku/bmV0L3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIzLzA3LzIwMjMw/NzIwXzEzNTYyNi5q/cGc" alt="" class="image"> 
+            <h1>BalckClover</h1>
+            <p>Black Clover is a Japanese manga series written and illustrated by Yūki Tabata. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump from February 2015 to August 2023, and will be moved to Jump Giga starting</p>  
+        </div>
+    </div> 
+    <script>
+        let rootElement = document.querySelector(".main")
+        fetch(`../javascript/myApi..json`) 
+        .then(response => response.json())
+        .then(data =>{
+
+            let data1="";
+            data.map((value)=>{
+                data1 +=`<div class="card"> 
+                    <img class="image" src= ${value.image} alt="" > <br>b f 
+                     <h1>${value.title}</h1>  <br> 
+                      <p>${value.about}</p>   
+                          </div>`
+                rootElement.innerHTML = data1  
+            })
+             })
+            
+            
+            
+            
+       
+     </script>
+</body>
+</html>

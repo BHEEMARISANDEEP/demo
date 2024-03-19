@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(rgb(10, 226, 226),rgb(136, 165, 31),rgb(231, 9, 9),rgb(0, 128, 111));
+            height: 100%;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: 30% 70%;
+            grid-template-rows:33% 36% 33%;
+            grid-template-areas:"class1 class1"
+                                 "class2 class3"
+                                 "class2 class3";
+        }
+        .title{
+            padding: 5px;
+            grid-area: class1;
+            text-align: center;
+    
+        }
+        .img{
+            grid-area: class2;
+        }
+        .details{
+            justify-content: center;
+            grid-area: class3;
+            background-color: rgb(25, 193, 235);
+            background-image: url("https://imgs.search.brave.com/Vt2eIfQwcOZMdDNAc_wBTT6VRRMFzSnLh9Y36lahfwo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDE4NTkw/NTcuanBn");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .details button{
+            width: 150px;
+            padding: 10px;
+            margin-left: 50px;
+
+           
+        }
+        button:hover{
+            background-color: green;
+            transform: scale(0.8);
+            padding: 10px;
+            transition: 1s;
+            
+        }
+        #game{
+            font-size: 35px;
+            text-align: center;
+            position: relative;
+            top: 50px;
+            color: white;   
+        }
+        
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="title">
+            <h1>CRICKET</h1>
+            <p >Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end, each comprising two bails balanced on three stumps. The batting side scores runs by striking the ball bowled at one of the wickets with the bat and then running between the wickets, while the bowling and fielding side tries to prevent this (by preventing the ball from leaving the field, and getting the ball to either wicket) and dismiss each batter (so they are "out"). Means of dismissal include being bowled, when the ball hits the stumps and dislodges the bails, and by the fielding side either catching the ball after it is hit by the bat, but before it hits the ground, or hitting a wicket with the ball before a batter can cross the crease in front of the wicket. When ten batters have been dismissed, the innings ends and the teams swap roles. The game is adjudicated by two umpires, aided by a third umpire and match referee in international matches.</p>
+        </div>
+        <div class="img">
+            <img class="imgsrc" src="https://imgs.search.brave.com/k-vGTzPGbFFBZqANA3lSXYF4MUhhTIMDshC-neMXTzw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90b3N0/YXR1cy5pbi93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMy8wNS9j/cmlja2V0LW1zLWRo/b25pLXBob3Rvcy5q/cGcud2VicA" alt="" width="300PX">
+        </div>
+        <div class="details">
+            <button id="id1" onclick="onefunction()">ABOUT</button>
+            <button id="id2" onclick="twofunction()">CAREER</button>
+            <button id="id3" onclick="threefunction()">TITLES</button>
+            <p id="game">MS.DHONI FOREVER</p>
+        </div>
+    </div>
+  <script>
+    function onefunction(){
+    let image = document.querySelector(".imgsrc").src = "https://imgs.search.brave.com/p8lNj7rOGLx6fUkqRYOvWjirVBaAP5LqT9iUu3xWD2g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90b3N0/YXR1cy5pbi93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMy8wNS9t/cy1kaG9uaS1vbGQt/cGhvdG9zLTEuanBn"
+    let button = document.querySelector("#id1").style.backgroundColor = "green"
+    let button1 = document.querySelector("#id2").style.backgroundColor = "white"
+    let button2 = document.querySelector("#id3").style.backgroundColor = "white"
+    let master = document.querySelector("#game")
+    master.textContent = "M.S. Dhoni, in full Mahendra Singh Dhoni, (born July 7, 1981, Ranchi, Bihar [now Jharkhand] state, India), Indian cricketer whose rise to prominence in the early 21st century culminated in his captaincy of the Indian national team that won the one-day Cricket World Cup in 2011"
+    
+}
+function twofunction(){
+    let image = document.querySelector(".imgsrc").src = "https://imgs.search.brave.com/pRAmhYv0A3epCKF0o1MbhRCUsjkvG0TLSrYAGsDIlqc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDYwNTAz/ODkuanBn"
+    let button = document.querySelector("#id2").style.backgroundColor = "green"
+    let button1 = document.querySelector("#id1").style.backgroundColor = "white"
+    let button2 = document.querySelector("#id3").style.backgroundColor = "white"
+    let master = document.querySelector("#game")
+    master.textContent = "Dhoni received India's highest sport award, the Major Dhyanchand Khel Ratna Award in 2008, for his extraordinary performance at the international level in the sport and the Government of India bestowed him by country's fourth highest civilian award Padma Shri in 2009 and third highest civilian award Padma Bhushan in 2018"
+
+
+}
+function threefunction(){
+    let image = document.querySelector(".imgsrc").src = "https://imgs.search.brave.com/5QLkZVzfLKynY_Oq4UA0il-lUFxiRirOFbtNXCgjVmc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDgyMDY3/MDIuanBn"
+    let button = document.querySelector("#id3").style.backgroundColor = "green"
+    let button1 = document.querySelector("#id2").style.backgroundColor = "white"
+    let button2 = document.querySelector("#id1").style.backgroundColor = "whitw"
+    let master = document.querySelector("#game")
+    master.textContent = " Dhoni is the first cricketer to be a winning captain of all three major ICC trophies, as under his captaincy, India won the 2007 ICC World Twenty20, the 2011 World Cup, and the 2013 ICC Champions Trophy, the most by any captain. He also led India to victory in the 2010 and 2016 Asia Cup and in indain premier league he won the championships 5 times in the year (2010,2011,2018,2021,2023)"
+
+    
+}
+ 
+  </script>  
+</body>
+</html>

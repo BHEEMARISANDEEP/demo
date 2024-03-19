@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .contain .main{
+        background-color: rgb(0, 225, 255);
+        display:flex;
+        padding:5px;
+    } 
+    .main h5{
+        position: relative;
+        top: 100px;
+        left: 120px;
+    }
+    .main h1{
+        position: relative;
+        top: 120px;
+        left: 100px;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0.8px;
+        color: black;
+    }
+    .main h3{
+        position: relative;
+        top: 180px;
+        left: -50px
+    }
+    .main P{
+        position: relative;
+        top: 240px;
+        left: 40px
+    }
+    #a{
+       align-items: center;
+       position: relative;
+       bottom: -230px;
+    }
+    .zero {
+        text-decoration: none;
+        height:90px;
+        position:sticky;
+        top:0.1px;
+        z-index:4;
+    }
+     .zero ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;  
+        background-color: rgb(204, 195, 185); 
+        font-size:20px;
+    }
+    span{
+        color:rgb(13, 164, 202);
+    }
+    .contain .zero ul li a{
+        color: black;
+        text-decoration: none;
+        text-align: center;
+        
+    }
+    .contain .zero ul li a:hover{
+        background-color: rgb(228, 161, 37);
+    
+    }
+    .zero button{
+        width:100px;
+    }
+    .zero button:hover{
+        background-color: aliceblue;
+    }
+    .one h1{
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0.3px;
+        font-size: 120px;
+        text-align: center; 
+    
+    }
+    .one h2{
+        font-size:30px;
+        text-align: center;
+        color: rgb(77, 241, 77);
+        position:relative;
+        bottom:85px;
+    
+    }
+    .one img{
+        margin-left:100px;
+    }
+    .one h3{
+        text-align: center;
+        position: relative;
+        bottom:290px;
+        font-size:40px;
+    }
+    .two{
+        text-align: center;
+        position: relative;
+        bottom:280px;
+        padding:10px;
+        margin-left: 40px;
+    }
+    .one p{
+        margin-left:10px;
+        padding: 5px;
+    }
+    .three{
+        text-align: center;
+        position: relative;
+        bottom:280px;
+        padding:10px;
+        
+    }
+    .three button{
+        width: 90px;
+        background-color: aliceblue;
+        color: black;
+    }
+    .three button:hover{
+        background-color: rgb(255, 0, 179);
+        font-size: medium;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+   .four h1{
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0.3px;
+        font-size: 120px;
+        text-align: center; 
+        position: relative;
+        bottom: 160px;
+    }
+    .four h2{
+        font-size:30px;
+        text-align: center;
+        color: rgb(77, 241, 77);
+        position:relative;
+        bottom:240px;
+    }
+    .five {
+        margin-left: 120px;
+        position: relative;
+        bottom: 70px;
+        padding: 20px;
+    }
+    .candy h1{
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0.3px;
+        font-size: 120px;
+        text-align: center; 
+        position: relative;
+        bottom: 70px;
+
+    }
+    .candy h3{
+        font-size:30px;
+        text-align: center;
+        color: rgb(77, 241, 77);
+        position:relative;
+        bottom:155px;
+
+    }
+    .six{
+        margin-left: 130px;
+    }
+    .bb{
+     margin-left: 730px;
+     position: relative;
+     bottom: 40px;
+     
+    }
+    .cc{
+     margin-left: 730px;
+     position: relative;
+     bottom: 40px;
+     left:-20px;
+     padding: 30px;
+    }
+    .dd{
+     position: relative;
+     bottom: 100px;
+     margin-left:140px;
+    }
+    .seven h1{
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0.3px;
+        font-size: 120px;
+        text-align: center; 
+    
+
+    }
+    .seven h3{
+        font-size:30px;
+        text-align: center;
+        color: rgb(77, 241, 77);
+        position:relative;
+        bottom:90px;
+    }
+   .ruba {
+    margin-left:420px;
+
+
+   }
+   .ruba button a{
+    text-decoration: none;
+    
+   }
+   .ruba button{
+    
+   border:1px solid #0bceaf;
+
+    border-radius: 50px; 
+    width:120px; 
+    height: 50px;
+    color:#0bceaf; 
+    background-color:white;
+    
+   }
+   .ruba button:hover{
+    background-color: #0bceaf;  
+   }
+   .imgs{
+    margin-left: 120px;
+    position: relative;
+    top: 30px;
+    
+   }
+   .imgs:hover{ 
+    cursor:grab;
+    column-rule-style:groove;
+   }
+   .eight h1{
+    -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0.3px;
+        font-size: 120px;
+        text-align: center; 
+        position: relative;
+        top: 25PX;
+    
+   }
+   .eight h3{
+    font-size:30px;
+        text-align: center;
+        color: rgb(77, 241, 77);
+        position:relative;
+        bottom:65px;
+   }
+   .nine{
+    display: flex;
+    margin-left: 180px;
+    
+
+   }
+   .ten h1{
+    -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0.3px;
+        font-size: 120px;
+        text-align: center; 
+        position: relative;
+        top: 25PX;
+   }
+   .ten h3{
+    font-size:30px;
+        text-align: center;
+        color: rgb(77, 241, 77);
+        position:relative;
+        bottom:65px;
+   }
+   .eleven{
+    margin-left:260px;
+
+   }
+   .eleven button{
+ border:1px solid #0bceaf;
+border-radius: 50px; 
+width:120px; 
+height: 50px;
+color:#0bceaf; 
+background-color:white;
+margin-left:320px;
+color: black;
+   }
+   .eleven button:hover{
+    background-color: #0bceaf;  
+
+   }
+   .footer{
+    background-color:#0bceaf;
+    height:300px; 
+
+   }
+ .start{
+    margin-left: 530px;
+    position:relative;
+    top:50px;
+    font-size:50px;
+    border-radius:50px;
+
+   }
+   .ex{
+    position: relative;
+    top:80px;
+    margin-left:450px;
+
+   }
+    start:hover{
+        background-color: red;
+        
+    }
+    #ab{
+        background-color: white;
+        border: 1px solid black;
+        font-size:20px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+
+            
+    
+    
+    
+    
+    
+    
+    
+
+    </style>
+</head>
+<body>
+    <div class="contain">
+    <div class="main">
+        <img src="images.css/IMG_20230713_234230_678.jpg" alt="" width="300px" height="300px" style="border-radius:50%;">
+        <h5>I'm</h5>
+        <h1 id="a">BHEEMARI SANDEEP</h1> 
+        <h3>Full stack Developer</h3>
+        <i id="a" class="fa-solid fa-circle-play fa-beat-fade" style="width: 25px; font-size: 50px;"></i>
+        <p>Play video</p>
+        
+    </div>
+   
+
+
+        <div class="zero"><ul>
+            <h2><span>My</span>Folio</h2>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Quality</a></li>
+            <li><a href="">Skill</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">conatct</a></li><br>
+            <button style="border:1px solid;border-radius: 50px;">Hire me</button>
+        </ul>
+        </div>
+        <div class="one">
+            <h1>ABOUT</h1>
+            <h2>ABOUT ME</h2>
+            <img src="images.css/IMG_20230713_234230_678.jpg" alt="" width="300px" height="300px">
+            <h3>Full stack Developer</h3>
+            <p>Iam a Full stack Developer I intend to be a part of organization. which enable to use my skils to serve. I can  constanly learn and develop my technical skills and make best use of it for growth of organzation.I look forward to establishing myself by adopting new technologies as well</p>
+        </div>
+        <div class="two">
+            <h3>Name:Sandeep</h3>
+            <h3>Degree:B.tech</h3>
+            <h3>Phone:9346352474</h3>
+            <h3>Adress:pedda cheekode,Dubbak:mndal,Dist:siddipet pincode:502108 </h3>
+            </div>
+            <div class="three">
+                <h3>Birthday: 31?12/2001</h3>
+                <h3>Expirence:Fresher</h3>
+                <h3>Email:sandeepsaaho88@gamil.com</h3> <br>
+                <button>Hire me</button>
+                <button>Learn more</button>
+            </div>
+            <div class="four">
+                <h1>QUALITY</h1>
+                <h2>EDUCATION</h2>
+            </div>
+            <div class="five">
+            <h2>MY EDUCATION</h2>
+            <h2>Bachelor's in Electrical & Electronices</h2>
+            <h3>JNTUH AFFIIATED | 2020-2023 </h3> <br>
+            <P>A Bachelor's degree in Electrical and Electronics Engineering is an undergraduate program that focuses on the principles, theories, and applications of electrical and electronic systems. This field of study is at the intersection of electrical engineering and electronics, encompassing a wide range of topics related to the generation, distribution, and utilization of electrical power, as well as the design and development of electronic devices and systems.</P> <br>
+            <h2>Diploma in Electrical & Electronices</h2>
+            <h3>SBTET AFFIIATED | 2017-2020 </h3> <br>
+            <P>A Diploma in Electrical and Electronics is a short-term, practical-oriented program that provides students with fundamental knowledge and skills in the field of electrical and electronics engineering.</P> <br>
+            <h2>Matriculation</h2>
+            <h3>TS BSE | 2016-2017</h3>
+
+            </div>
+            <div class="candy">
+                <h1>SKILLS</h1>
+                <h3>MY SKILLS</h3>
+            </div>
+            <div class="six">
+                <option value="">CSS</option>
+                <input type="range" style="width: 500px;">
+              
+              
+            </div>
+            <div class="bb">
+                <option value="">HTML</option>
+                <input type="range" style="width: 500px;">
+              
+
+            </div>
+            <div class="cc">
+                <option value="">MS OFFICE</option>
+                <input type="range" style="width: 500px;">
+            </div>
+            <div class="dd">
+                <option value="">Java script</option>
+                <input type="range" style="width: 500px;">
+              
+            </div>
+            <div class="seven">
+                <h1>GALLERY</h1>
+                <h3>MY PORTFOLIO</h3>
+                <div class="ruba">
+                <button id="e"><a href="">All</a></button >
+                <button id="f"><a href="">Design</a></button>
+                <button id="g"><a href="">Development</a></button>
+                <button id="h"><a href="">Marketing</a></button>
+            </div>
+                <div class="imgs">
+                    <img src="https://images.unsplash.com/photo-1682686580391-615b1f28e5ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <img src="https://images.unsplash.com/photo-1682687982501-1e58ab814714?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">     
+                    <img src="https://images.unsplash.com/photo-1695018128519-bced2bac1b71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <img src="https://images.unsplash.com/photo-1682686581660-3693f0c588d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyMXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                </div>
+            </div>
+            <div class="eight">
+                <h1>BLOG</h1>
+                <h3>LATEST BLOG</h3>
+            </div>
+            <div class="nine">
+                
+                <img src="https://demo.htmlcodex.com/1331/freelancer-portfolio-template/img/blog-1.jpg" alt="" width="300px" style="margin:10px;"><br>
+                <img src="https://demo.htmlcodex.com/1331/freelancer-portfolio-template/img/blog-2.jpg" alt="" width="300px" style="margin: 10px;"><br>
+                <img src="https://demo.htmlcodex.com/1331/freelancer-portfolio-template/img/blog-3.jpg" alt="" width="300px" style="margin: 10px;"><br>
+                
+                
+                
+            </div>
+            <div class="ten">
+                <h1>CONTACT</h1>
+                    <h3>CONTACT ME</h3>
+            </div>
+            <div class="eleven">
+                <input type="text" placeholder="      Your Name" style="border-radius: 50px; width: 400px; height: 50px;">
+                <input type="text" placeholder="      Your Email" style="border-radius: 50px; width: 400px;height:50px;"> <br> <br>
+                <input type="text" placeholder="      Subject" style="border-radius: 50px ; width: 800px; height:70px;"> <br>  <br>
+                <input type="text" placeholder="                                       Message" style="border-radius: 50px; width:800px;height: 100px;"> <br> <br>
+                <button>Send message</button>
+            </div> <br>
+            <div class="footer">
+                <div class="start">
+              <button id="ab"> <i class="fa-brands fa-instagram"  ></i></button> 
+                <button id="ab"><i class="fa-brands fa-twitter"  ></i></button>
+               <button id="ab"><i class="fa-brands fa-linkedin " ></i></button>
+                <button id="ab"><i class="fa-brands fa-facebook" ></i></button>
+            
+            </div>
+            <div class="ex">
+                <h1>Privacy | Terms | FAQs | Help </h1>
+                <p>© BHEEMARI SANDEEP. All Rights Reserved. Designed by HTML Codex</p>
+            </div>
+           
+
+            
+
+            </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 800px;
+            background-image: url( "https://imgs.search.brave.com/e7UlPuQEjLgtSQCLIZS85hQZ0fNWxeXj9F6gOHtoUNw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9oYW5kLWhvbGRp/bmctZHJhd2luZy12/aXJ0dWFsLWxpZ2h0/YnVsYi13aXRoLWJy/YWluLWJva2VoLWJh/Y2tncm91bmQtY3Jl/YXRpdmUtc21hcnQt/dGhpbmtpbmctaWRl/YS1jb25jZXBfNTAw/MzktMzAzMy5qcGc_/c2l6ZT02MjYmZXh0/PWpwZw");
+            background-repeat: no-repeat;
+           
+            background-size: cover;
+            position: relative;
+            right: 800px;
+
+        }
+        .title{
+            font-size: 50px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(200, 248, 27);
+        }
+        .main .user-input{
+            font-size: 50px;
+            border: 2px solid;
+            border-radius: 20px;
+        }
+        .main .Result{
+            font-size: 200px;
+            font-family: fantasy;
+            color: blueviolet;
+
+        }
+        .check-no{
+            color:rgb(7, 7, 7);
+            background-color:green;
+            width: 200px;
+            height: 100px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+            border-radius: 30px;
+            font-size: 50px;
+            margin-left: 200px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="https://imgs.search.brave.com/70-b5ikFNCPGXWpAg2frZJGISPI6NUxjUwhWq0aXVQs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9mcmVl/cG5naW1nLmNvbS90/aHVtYi9mYWNlYm9v/ay83MjU0Ny10aGlu/a2luZy1waG90b2dy/YXBoeS1xdWVzdGlv/bi1tYXJrLW1hbi1z/dG9jay5wbmc" alt=""> <br> <br> <br> <br> <br> 
+        <h2 class="title">Number Guessing From 0 to 100 </h2> <br> <br>
+        <input type="text" class="user-input"> <br> <br> <br>
+        <button class="check-no" onclick="Number()">check</button>
+      <p class="Result">Game result here </p>
+    </div>
+    <script>
+let gameResult = document.querySelector(".Result")
+let userInput = document.querySelector(".user-input")
+let checkNumberButton = document.querySelector(".check-no")
+let randomNumber = Math.ceil(Math.random()*100)
+console.log(randomNumber)
+
+function Number(){
+    let guessNumber = parseInt(userInput.value)
+    if(guessNumber>randomNumber){
+        gameResult.textContent = "TOO HIGH"
+        gameResult.style.backgroundColor = "blue"
+        gameResult.style.color = "white"
+    } 
+    else if(guessNumber<randomNumber){
+        gameResult.textContent = "TOO LOW"
+        gameResult.style.backgroundColor = "orange"
+        gameResult.style.color = "white"
+
+    } else if(guessNumber === randomNumber){
+        gameResult.textContent = "CONGRATULATIONS... YOU GOT IT...!!!"
+        gameResult.style.backgroundColor = "green"
+        gameResult.style.color = "white"
+    }
+    else{
+        gameResult.textContent = "ENTER VAILD INPUT ...???"
+        gameResult.style.backgroundColor = "red"
+        gameResult.style.color = "white"
+
+    }
+       
+    }
+
+
+    </script>
+</body>
+</html>

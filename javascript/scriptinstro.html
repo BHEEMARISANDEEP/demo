@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="one" ></div>
+  
+   <script>
+
+
+        let oneElement = document.getElementById("one")
+        let myImage = document.createElement("img")
+        myImage.setAttribute("src","https://images.unsplash.com/photo-1696928621163-60b2dae656be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60")
+        console.log(myImage)
+        oneElement.appendChild(myImage)
+        myImage.style.width="800px"
+        myImage.style.borderRadius="50%"
+        myImage.style.height="1000px"
+        myImage.style.boxShadow="4px 3px 2px 2px red"
+        //img create..//
+
+   </script>
+    <div id="two">
+        <button id="add">Legend</button>
+        <button id="remove" >on</button>
+
+    </div>
+    <script>
+        function styleAdd(){
+            alert("you clicked on ranjith bank account error")
+            
+        }
+        
+        
+        function styleRemove(){
+            alert("invaild bank account zero")
+        }
+        
+        let addBtn = document.getElementById("add")
+        let removeBtn = document.getElementById("remove")
+        addBtn.style.color="blue"
+        
+        
+        
+        
+    </script>
+
+
+</body>
+</html>

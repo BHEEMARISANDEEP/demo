@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rep Navbar</title> 
+    
+</head>
+<style>
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: cornflowerblue;
+}
+.navbar .links ul li{
+    list-style: none;
+    margin-right: 40px;
+
+}
+.navbar .links ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+.navbar .links ul{
+    display: flex;
+    margin-top: 25px;
+}
+.navbar .links ul li a:hover{
+    background-color: rgb(36, 36, 69);
+    color: white;
+
+}
+.icon{
+    position: absolute;
+    top: 40px;
+    font-size: 30px;
+    right: 50px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width:1000px){
+     .links{
+        display: none; 
+    }
+    .icon{
+        display: block;
+    }
+     .links ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .links{
+        background-color: rgb(36, 36, 69);
+        padding-bottom: 40px;
+        width: 100%;
+    }
+
+    .active{
+        display: flex;
+    }
+}   
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://teksacademy.com/assets/img/logo/mainlogo.svg" alt="" width="200px" >
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Products</a></li>
+            </ul>
+        </div>
+        <p class="icon"><i  class="fa-solid fa-bars icon"></i></p>
+    </div>
+    <script>
+        let stand = document.querySelector(".icon")
+        let menu = document.querySelector(".links")
+        console.log(stand)
+        stand.onclick = function(){
+            menu.classList.toggle("active")
+            alert("stand up")
+
+
+        }
+
+    </script>
+    
+</body>
+</html>

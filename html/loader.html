@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            background-color: black;
+            height:100vh;
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+        }
+        .main .one{
+            height:100px;
+            width:100px;
+            border-radius:50%;
+            border:10px solid rgb(7, 233, 19);
+            border-top-color: red;
+            animation:sandy 1s linear infinite;
+        }
+        .main .two{
+            height:400px;
+            width:400px;
+            border-radius:50%;
+            position: relative;
+            left:10px;
+            border:2px solid rgb(15, 15, 15);
+            box-shadow: 0px 0px 3px;
+            animation:luffy 1s linear infinite;
+        }
+        .main  p{
+            color:red;
+            position: relative;
+            left:-500px;
+        
+            animation:zoro 3s  linear infinite;
+        }
+        .main .three{
+            height:250px;
+            width:250px;
+            border-radius:50%;
+            font-size:10px;
+            position: relative;
+            right:595px;
+            border: solid rgb(15, 15, 15);
+            box-shadow: 0px 0px 3px;
+            animation:sanji 10s linear infinite reverse;
+        }
+        .main .four{
+            height:50px;
+            width:50px;
+            border-radius:50%;
+            position: relative;
+            right:830px;
+          background-color: orangered;
+            border:2px solid rgb(15, 15, 15);
+            box-shadow: 0px 0px 3px;
+            animation:usop 10s linear infinite;
+        }
+       
+        
+        @keyframes sandy{
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(90deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            75%{
+                transform: rotate(270deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes luffy{
+            0%{
+                box-shadow: 2px 3px blue;
+                transform: rotate(0deg);
+            
+            }
+            25%{ 
+                box-shadow: 3px 3px rgb(224, 8, 44);
+                transform: rotate(90deg);
+            }
+            50%{
+                box-shadow: 3px 4px yellow;
+                transform: rotate(180deg);
+            }
+            75%{
+                box-shadow: 4px 5px mediumblue;
+                transform: rotate(270deg);
+            }
+            100%{
+                box-shadow: 3px 6px purple;
+                transform: rotate(360deg);
+            }
+            
+        }
+        @keyframes zoro{
+            0%{
+                
+            }
+            50%{
+                color: transparent;
+            }
+                
+            }
+            @keyframes sanji{
+            0%{
+                transform: rotate(0deg);
+                box-shadow: 2px 3px #00ffff;
+            }
+            25%{
+                transform: rotate(90deg);
+                box-shadow: 2px 3px rgba(255, 0, 170, 0.856);
+            }
+            50%{
+                transform: rotate(180deg);
+                box-shadow: 2px 3px blue;
+            }
+            75%{
+                transform: rotate(270deg);
+            }
+            100%{
+                transform: rotate(360deg);
+                box-shadow: 2px 3px rgb(8, 48, 121);
+            }
+        }
+        @keyframes usop{
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(90deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            75%{
+                transform: rotate(270deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+           
+            
+        
+    </style>
+</head>
+<body>
+    <div class="main"><div class="one"></div>
+    <div class="two"><img src="https://imgs.search.brave.com/1ZQryG3x8ztqZvAkpRUHgOV4dUC0A8n4Gh5J2Jy8K5A/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDIyNzYy/NjYucG5n" alt="" width="100px" height="100px" style="border-radius:50%;"></div>
+    <p style="font-size: larger; font-family: fantasy;">ONE PIECE...</p>
+    <div class="three"> <img src="https://imgs.search.brave.com/WLcVugXS3-txscrDHNBvzreRvXWgaLzNX15m8xqZ3YI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/bW9zLmNtcy5mdXR1/cmVjZG4ubmV0LzRW/ZVBGQVhaUmhiM01O/Y0NzdUtxbVctMzIw/LTgwLmpwZw" alt="" width="100px"  height="100px" style="border-radius: 50%;"></div>
+    <div class="four"></div>
+    
+    </div>
+    
+  
+</body>
+</html>

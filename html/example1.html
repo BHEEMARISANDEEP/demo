@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example.1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+    
+        }
+        .main{
+            display: grid;
+            grid-template-columns: 30% 30% 40%;
+            grid-template-rows: 15% 15% 70%;
+            grid-template-areas:"class1 class1 class1"
+                                 "class2 class2 class5"
+                                 "class3 class4 class5";
+            height:90vh;
+            width:80%;
+            grid-gap:10px;
+            
+        }
+           
+        #a{
+            background-color:blue ;
+            grid-area: class1;
+            border-radius:20px;
+          
+        }
+       #b{
+            background-color: yellow;
+            grid-area:class2;
+            border-radius:20px;
+
+        }
+       #c{
+            background-color:red ;
+             grid-area:class3;
+             border-radius:20px;
+        }
+        #d{
+            background-color:rgb(235, 8, 159) ;
+             grid-area:class4;
+             border-radius:20px;
+        }
+        #e{
+            background-color:rgb(9, 226, 241) ;
+             grid-area:class5;
+             border-radius:20px;
+        }
+
+        
+    
+
+    
+    </style>
+</head>
+<body>
+    <div class="con">
+<div class="main">
+    <div class="header" id="a" ></div>
+    <div class="search"   id="b"></div>
+    <div class="leftsider"   id="c"></div>
+    <div class="middlecolumn"  id="d"></div>
+    <div class="rightsider"  id="e"></div>
+</div>
+</div>
+    
+</body>
+</html>

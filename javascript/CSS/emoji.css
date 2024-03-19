@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url("https://imgs.search.brave.com/qxLRDov19nX80zIG79_PmGFAEvYS3mnDJ82OHCbA7tU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzgzLzAy/L2MyLzgzMDJjMjk1/NGM0ODc5OGYxYTFi/OGY5NDJkODRlNjZl/LmpwZw");
+ 
+}
+.imgsrc{
+    margin-top: 100px;
+    margin-left: 450px;
+}
+.stars{
+    margin-top: 10px;
+    margin-left: 428px;
+    font-size: 30px;
+
+
+}
+.result{
+    margin-top: 10px;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+
+}

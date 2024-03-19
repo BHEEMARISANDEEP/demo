@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .navbar{
+        
+        height: 72px;
+        display: flex;
+        align-items: center;
+        margin: 5px;
+        background-color: rgb(68, 152, 226);
+        position: sticky;
+        top:0;
+        z-index:1;
+        
+    }
+    .navbar .logo img{
+        width: 40px;
+        margin-left: 100px;
+    }
+    .navbar .links ul{
+        display: flex;
+        
+        margin: 50px;
+        
+    }
+    .navbar .links ul li{
+        padding: 30px;
+        list-style-type: none;
+       
+    }
+    .navbar .links ul li a{
+        text-decoration: none;
+        color:black;
+        font-size: 16px;
+        font-family: sodosans_light,helevetica,sans-serif
+       
+    }
+    .bar{
+        margin-left: 30px;
+        text-align: center;
+    }
+    #a2{
+        width: 264px;
+        height: 30px;
+        padding: 6px 12px;
+        border: 0.2px solid;
+        border-radius: 20px; 
+        text-align: center;
+        margin-bottom: 14px;
+    }
+  #pk{
+    position: relative;
+    top: 25px;
+    right: 120px;
+    color: rgba(110, 105, 105, 0.324);
+  }
+  #a3{
+    position: relative;
+    left: 120px;
+  }
+  .two{
+    background-color:rgb(64, 126, 64);
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    align-items: center;
+  }
+  h2{
+    margin-right: 200px;
+    color: #ffffff;
+    font-family:;
+  }
+  button{
+    width: 100px;
+    height: 32px;
+    border-radius: 10px;
+    background-color:rgb(64, 126, 64) ;
+    color: #ffffff;
+    border: 1px solid white;
+    padding: 5px;
+ 
+  }
+  .three img{
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    border-radius: 50%;
+  }
+  .names{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-left: -40px;
+    position: relative;
+    bottom: 12px;
+  }
+  h3{
+    font-size: 25px;
+    margin-left: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }  
+  .card{
+    height: 60vh;
+  }
+  .pic{
+    width: 1050px;
+    height: 250px;
+    background-color: rgba(227, 80, 27, 0.865);
+    margin-top: 90px;
+    margin-left: 100px;
+    border-radius: 10px;
+  }
+  .pic img{
+    margin-top: 0px;
+    width: 112px;
+  }
+  .data{
+    margin-left: 230px;
+    position: relative;
+    bottom: 235px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #g1{
+    margin-left: 700px;
+    width: 170px;
+    height: 50px;
+    position: relative;
+    bottom: 70px;
+    border: 0;
+    font-size: larger;
+    border-radius: 20px;
+  }
+  .four{
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+  }
+  .four .card1{
+    background-color: beige;
+    width: 350px;
+    height: 370px;
+    overflow: hidden;
+    box-shadow: 3px 2px 2px ;
+    border: 1px solid;
+    
+  }
+  .four .card1 h4{
+    color: black;
+    margin-left: 90px;
+  }
+  .four .card1 p{
+    margin-left: 70px;
+  } 
+  .four .card1 button{
+    position: relative;
+    top: 70px;
+    margin-left: 120px;
+  }
+  .four .card2{
+    background-color: beige;
+    width: 350px;
+    height: 370px;
+   overflow: hidden;
+    box-shadow: 1px 2px 2px ;
+    border: 1px solid;
+  }
+  .four .card2 h4{
+    color: black;
+    margin-left: 90px;
+  }
+  .four .card2 p{
+    margin-left: 70px;
+  } 
+  .four .card2 button{
+    position: relative;
+    top: 70px;
+    margin-left: 120px;
+  }
+  .four .card3{
+    background-color: beige;
+    width: 350px;
+    height: 370px;
+    overflow: hidden;
+    box-shadow: 3px 2px 2px ;
+    border: 1px solid;
+  }
+  .four .card3 h4{
+    color: black;
+    margin-left: 90px;
+  }
+  .four .card3 p{
+    margin-left: 70px;
+  } 
+  .four .card3 button{
+    position: relative;
+    top: 70px;
+    margin-left: 120px;
+  }
+  .five{
+    height: 90vh;
+  }
+  .five img{
+    width: 900px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 200px;
+  }
+  .data2{
+    margin-left:250px;
+    position: relative;
+    bottom: 170px;
+    
+  }
+  .footer{
+    background-color: #0e382c;
+    color: white;
+    height:400px;
+    grid-template-columns: 10% 20% 15% 15% 15% 20%;
+    grid-template-rows:100%;
+    display: grid;
+            grid-template-areas:"a b c d e f ";
+
+  }
+  .start1{
+    margin-top: 10px;
+    grid-area:a;
+    padding: 10px;
+  }
+  
+  .start2{
+    margin-top: 10px;
+    grid-area:b;
+    padding: 10px;
+    
+  }
+  .start3{
+    margin-top: 10px;
+    grid-area:c;
+    padding: 10px;
+  }
+  .start4{
+    margin-top: 10px;
+    grid-area:d;
+    padding: 10px;
+  }
+  .start5{
+    margin-top: 10px;
+    grid-area:e;
+    padding: 10px;
+    
+  }
+  .start6{
+    margin-top: 10px;
+    grid-area:f;
+    padding: 10px;
+  }
+
+
+
+</style>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://www.starbucks.in/assets/icon/logo.png" alt="" style="width: 40px; ">
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Gift</a></li>
+                <li><a href="">Order</a></li>
+                <li><a href="">Pay</a></li>
+                <li><a href="">Store</a></li>
+            </ul>
+        </div>
+        <div class="bar">
+           <p id="pk"> <i  class="fa-solid fa-magnifying-glass"></i></p>
+           <input id="a2" type="text" placeholder=   "Looking for Something  Specific?">
+           <i id="a3" class="fa-regular fa-user"></i>
+               
+        </div>
+        
+        
+    </div>
+    <div class="two">
+        <h2>Avail benifits! Sign up for My Starbucks Rewards.</h2>
+        <button>Know More</button>
+    </div>
+    <br>
+    <h3><strong>Handcrafted Curations</strong></h3>
+    <br>
+    <div class="three">
+        <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/Bestseller.jpg" alt="">
+        <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/Drinks.jpg" alt="">
+        <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/Food.jpg" alt="">
+        <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/Merchandise.jpg" alt="">
+        <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/CoffeeAtHome.jpg" alt="">
+        <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/ReadyToEat.jpg" alt="">
+        <div class="names">
+            <h4>Bestseller</h4>
+            <h4>Drinks</h4>
+            <h4>Food</h4>
+            <h4>Merchandise</h4>
+            <h4>Coffee At Home</h4>
+            <h4>Ready to Eat</h4>
+        </div>
+    </div>
+    <div class="card">
+        <div class="pic">
+            <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/7_2_6f41fae88f.png" alt="" width="60px">
+        </div>
+       <div class="data">
+        <p id>The Beloved Comeback Of </p>
+        <br>
+        <h3>Pumpkin Spice Menu</h3>
+        <br>
+        <p>Experience the essence of autumn with our best-selling star, now available as Frappuccino,<br> 
+            Latte, and Nitro Brew!
+            <br>
+            <br><br>
+            <br>
+            Strating From
+            <br>
+            <strong>₹ 400.00</strong>
+        </p>
+        <button id="g1">Order now</button>
+       </div>
+    </div>
+    <h3>Latest Offerings</h3>
+    <br>
+    <br>
+    <div class="four">
+        <div class="card1">
+            <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/102253.webp" alt="" width="350px " height="170px">
+            <h4>Pumpkin spice latte</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button>order me</button>
+
+        </div>
+        <div class="card2">
+            <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/102257.webp" alt="" width="350px" height="170px">
+            <h4>iced Pumpkin spice latte</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button>order me</button>
+
+        </div>
+        <div class="card3">
+            <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/102260.webp" alt="" width="350px" height="170px">
+            <h4>Pumpkin spice Frappuccino</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button>order me</button>
+
+
+        </div>
+    </div>
+    <h3>Learn More About the World of Coffee</h3>
+    <div class="five">
+        <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/C_A_F_E_BLOG_WEB_5e2635de8d.jpg" alt="">
+       <div class="data2">
+        <h2 style="color: #ffffff;">Coffee With a Conscience</h2>
+        <br>
+        <p style="color: #ffffff;">With Quality and Transparencyat its core, the Starbucks' C.A.F.E. program <br>
+            is brewing a sustainable Coffee Culture</p>
+        <br>
+        <button style="background-color: #ffffff; color: black; width: 140px;">Learn More</button>
+       </div>
+       <button style="background-color: transparent; color: rgb(68, 157, 68) ;position: relative;
+       left: 250px; bottom: 500px;">Coffee Culture</button>
+    </div>
+    <div class="footer">
+        
+        <div class="start1">
+            <img src="https://www.starbucks.in/assets/icon/logo.png" alt="" style="width: 40px; ">
+        </div>
+            
+
+       
+        <div class="start2">
+            <p style="font-size: 25px; color: #ffffff;">About us</p><br>
+            <h4>our heritge</h4><br>
+            <h4>coffehouse</h4><br>
+            <h4>our company</h4><br>
+
+        </div>
+        <div class="start3">
+            <p style="font-size: 25px; color: #ffffff;">Responsibility</p><br>
+            <h4>community</h4><br>
+            <h4>Ethical sourcing</h4> <br>
+            <h4>Enviorment</h4><br>
+            <h4>Diversity</h4><br>
+
+
+        </div>
+        <div class="start4">
+                       <p style="font-size: 25px; color: #ffffff;">Quick links</p> <br>
+            <h4>community</h4><br>
+            <h4>Ethical sourcing</h4><br>
+            <h4>Enviorment</h4><br>
+            <h4>Diversity</h4><br>
+
+
+
+        </div>
+        <div class="start5">
+            <p style="font-size: 20px; color: #ffffff;">SOCIAL MEDIA</p> <br>
+            <i class="fa-brands fa-instagram"  ></i>
+                <i class="fa-brands fa-twitter"  ></i>
+               <i class="fa-brands fa-linkedin " ></i>
+                <i class="fa-brands fa-facebook" ></i>
+            
+
+
+        </div>
+        <div class="start6"><br>
+            <img src="https://www.starbucks.in/assets/images/appstoreiOS.png" alt=""><br><br>
+            <img src="https://www.starbucks.in/assets/images/appstoreAndroid.png" alt="">
+
+        </div>
+    </div>
+    </div>    
+</body>
+</html>

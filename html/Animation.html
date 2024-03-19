@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                *{
+            margin: 0;
+            padding: 0;
+                box-sizing: border-box;
+        }
+        .anime{
+            border: 3px solid;
+            border-radius: 50px;
+            width: fit-content;
+            box-shadow: 50px rgb(172, 9, 9);
+            animation-name: anime;
+            animation-duration: 3s;
+            animation-delay: 5s;
+            animation-iteration-count: 20;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate-reverse;
+        }
+            
+            .hero{
+            animation-name:hero;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-iteration-count: 20;
+            animation-timing-function:ease-in;
+            animation-direction:reverse;
+    
+            }
+            .luffy {
+            border: 3px solid;
+            border-radius: 50px;
+            width: fit-content;
+            animation-name: anime;
+            animation-duration: 10s;
+            animation-iteration-count: 20;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate-reverse;
+        }
+        .juju{
+            position: absolute;
+            top: 30px;
+            left: 500px;
+            border-radius:30%;
+            animation-name: anime;
+            animation-duration: 10s;
+            animation-iteration-count: 20;
+            animation-timing-function:ease-in;
+            animation-direction:alternate;
+
+        }
+
+        
+        @keyframes anime{
+        0%{
+         transform:translate(200px);
+        }
+        25%{
+            transform:rotate(50deg);
+                    
+        }
+        50%{
+            transform: translate(100px);
+        }
+        75%{
+            transform:translate(200px,300px);
+        }
+100%{
+    background-color: transparent;
+    transform: rotate(180deg);
+}
+ 
+        }
+        @keyframes hero{
+            0%{
+         transform: translateX(200px);
+        }
+        25%{
+            transform:scale(100,500)
+                    
+        }
+        50%{
+            transform:rotate(180deg);
+        }
+        75%{
+            transform:translate(200px,300px);
+        }
+100%{
+    background-color: transparent;
+}
+        }
+@keyframes luffy{
+    0%{
+         transform:translate(200px);
+        }
+        25%{
+            transform:rotate(50deg);
+                    
+        }
+        50%{
+            transform: translate(100px);
+        }
+        75%{
+            transform:translate(200px,300px);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+}
+@keyframes juju{
+        0%{
+         transform:translate(200px);
+        }
+        25%{
+            transform:rotate(50deg);
+                    
+        }
+        50%{
+            transform: translate(100px);
+        }
+        75%{
+            transform:rotate(270deg);
+        }
+100%{
+    background-color: transparent;
+    transform:scale(30px 5opx);
+}
+}
+    
+    </style>
+
+</head>
+<body>
+  <div class="anime"><img src="https://imgs.search.brave.com/IbseiYGDQL-KHHbTCcdnbcxs45C3qUGC_mw8i4Zx878/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9nZXR3/YWxscGFwZXJzLmNv/bS93YWxscGFwZXIv/ZnVsbC85LzYvMS83/MDM1MDQtZnVsbC1z/aXplLWJsZWFjaC1h/bmltZS13YWxscGFw/ZXItMTkyMHgxMjAw/LW1hY2Jvb2suanBn" alt="" width="300px"></div>  
+<div class="hero"><img src="https://imgs.search.brave.com/yQfcemMsySWxrutM10HpFcU6p5YxKERv2nGv7F5nGng/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDE5OTM3/MjMuanBn" alt="" width="200px"></div>
+<div class="luffy"><img src="https://imgs.search.brave.com/I1XpRXNge_n4Lza6Qe6cG8tHi_Wd1F18Hu9EST41q6E/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvb25l/LXBpZWNlLXBpY3R1/cmVzLTIyY3F4bzJj/d3M4bmgzaGsuanBn" alt="" width="400px"></div>
+<div class="juju">
+    <img src="https://imgs.search.brave.com/L_xhPY_PPzX6sXfF2h079MF9e-3ZnhhrlM218ULR1Mc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXIuZG9nL2xh/cmdlLzIwNDkzMzA1/LmpwZw" alt="" width="200px">
+</div>
+
+</body>
+</html>

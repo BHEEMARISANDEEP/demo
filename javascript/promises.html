@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">submit</button>
+
+  <script>
+    function fetchDataFromAPI() {
+    return new Promise((resolve, reject) => {
+        let data = "sandeep"
+        if(data){
+            resolve(data)
+        }
+        else{
+            reject("error")  
+        }
+    })
+    }
+
+    fetchDataFromAPI()
+    .then(
+        output=>{
+            console.log("success:",output)
+        }
+    )
+    .catch(error=>{
+        console.error("error")
+    })
+   
+  </script>  
+</body>
+</html>
